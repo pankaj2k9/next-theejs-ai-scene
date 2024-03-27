@@ -11,7 +11,22 @@
   "dependencies": {
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.4"
+    "next": "14.1.4",
+    "@lumaai/luma-web": "^0.2.2",
+    "@mkkellogg/gaussian-splats-3d": "^0.3.5",
+    "@react-three/drei": "^9.88.7",
+    "@react-three/fiber": "^8.15.8",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4",
+    "gle-gaussian-splat-3d": "^1.0.17",
+    "gsplat": "^1.1.0",
+    "next-transpile-modules": "^10.0.1",
+    "postcss": "^8",
+    "r3f-perf": "^7.1.2",
+    "tailwindcss": "^3.3.0",
+    "three": "^0.160.0"
+
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
