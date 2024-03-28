@@ -41,8 +41,8 @@ export async function POST(req) {
         content: file,
       }],
     });
-
-    return new Response(JSON.stringify({ success: true, message: "File uploaded successfully" }), {
+    const fileURL = `https://huggingface.co/datasets/${process.env.NEXT_HUGGINGFACE_REPO}/resolve/main/${file.name}`;
+    return new Response(JSON.stringify({ success: true, message: "File uploaded successfully", url: fileURL }), {
       status: 200,
       headers: {
         'Content-Type': 'application/json',

@@ -24,12 +24,11 @@ function App() {
     {
       url: "https://huggingface.co/datasets/runes/coolsplats/resolve/main/output.splat",
       position: [3, 2, 3.2],
-    },
+    }
   ]);
   const handleFileUpload = async (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
     setLoading(true)
-    // Assuming there's only one file input in the form, you can still access it directly if needed
     const form = event.target;
     const file = form.querySelector('input[type="file"]').files[0];
     if (file) {
@@ -44,9 +43,6 @@ function App() {
 
         if (response.ok) {
           const result = await response.json();
-          console.log('File uploaded successfully:', result);
-
-          // Assuming setFiles is a useState updater function
           setFiles((prevFiles) => [
             ...prevFiles,
             {
