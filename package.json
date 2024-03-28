@@ -9,9 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.4",
+    "@huggingface/hub": "^0.14.4",
     "@lumaai/luma-web": "^0.2.2",
     "@mkkellogg/gaussian-splats-3d": "^0.3.5",
     "@react-three/drei": "^9.88.7",
@@ -21,18 +19,21 @@
     "eslint-config-next": "14.1.4",
     "gle-gaussian-splat-3d": "^1.0.17",
     "gsplat": "^1.1.0",
+    "next": "14.1.4",
     "next-transpile-modules": "^10.0.1",
     "postcss": "^8",
     "r3f-perf": "^7.1.2",
+    "react": "^18",
+    "react-dom": "^18",
     "tailwindcss": "^3.3.0",
     "three": "^0.160.0"
-
   },
   "devDependencies": {
+    "@types/node": "20.11.30",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.1.4"
+    "eslint-config-next": "14.1.4",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0"
   }
 }
