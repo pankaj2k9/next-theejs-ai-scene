@@ -1,5 +1,5 @@
 import { uploadFiles, createRepo, whoAmI } from "@huggingface/hub";
-export const runtime = 'edge'
+// export const runtime = 'edge'
 
 export async function POST(req) {
 
