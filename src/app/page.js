@@ -1,5 +1,5 @@
 "use client"
-import { Suspense, useState, useRef } from "react";
+import { Suspense, useState, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 // eslint-disable-next-line no-unused-vars
 import SceneWithDeclarativeWay from "./components/SceneWithDeclarativeWay";
@@ -7,10 +7,7 @@ import SceneWithDeclarativeWay from "./components/SceneWithDeclarativeWay";
 // import Loader from "./Loader.jsx";
 import { Perf } from "r3f-perf";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-
-const getRandomPosition = () => {
-  return [Math.random() * 6 - 3, Math.random() * 4 - 2, Math.random() * 5 - 2.5];
-};
+import { getRandomPosition } from "./components/utils";
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -26,6 +23,24 @@ function App() {
       position: [3, 2, 3.2],
     }
   ]);
+
+
+  useEffect(() => {
+    const fetchFiles = async () => {
+      try {
+        const response = await fetch('/api/upload');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setFiles(data.files);
+      } catch (error) {
+        console.error("Failed to fetch files:", error);
+      }
+    };
+
+    fetchFiles();
+  }, []);
   const handleFileUpload = async (event) => {
     event.preventDefault(); // Prevent the default form submission behavior
     setLoading(true)
