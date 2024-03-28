@@ -38,7 +38,7 @@ export async function POST(req) {
       credentials,
       files: [{
         path: file.name,
-        content: file.stream(),
+        content: file,
       }],
     });
 
