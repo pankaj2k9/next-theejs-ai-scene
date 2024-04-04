@@ -1,5 +1,5 @@
 import { uploadFiles, listFiles, whoAmI } from "@huggingface/hub";
-import { getRandomPosition } from "../../components/utils";
+import { getRandomPosition } from "../../_components/utils";
 // export const runtime = 'edge'
 
 export async function POST(req) {

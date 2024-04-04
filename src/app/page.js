@@ -2,12 +2,12 @@
 import { Suspense, useState, useRef, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 // eslint-disable-next-line no-unused-vars
-import SceneWithDeclarativeWay from "./components/SceneWithDeclarativeWay";
+import SceneWithDeclarativeWay from "./_components/SceneWithDeclarativeWay";
 // import Scene from "./Scene";
 // import Loader from "./Loader.jsx";
 import { Perf } from "r3f-perf";
 import { OrbitControls, PerspectiveCamera } from "@react-three/drei";
-import { getRandomPosition } from "./components/utils";
+import { getRandomPosition } from "./_components/utils";
 
 function App() {
   const [progress, setProgress] = useState(0);
