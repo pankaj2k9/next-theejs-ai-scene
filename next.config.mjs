@@ -5,7 +5,6 @@
 const nextConfig = {
     reactStrictMode: true,
     // other Next.js config options
-    
     // Async headers function
     async headers() {
       return [
@@ -20,28 +19,5 @@ const nextConfig = {
       ];
     },
   };
-  
+
   export default nextConfig;
-  
-
-
-// /** @type {import('next').NextConfig} */
-// import withTM from 'next-transpile-modules';
-
-// const modulesToTranspile = ['three'];
-
-// const nextConfig = {
-// };
-
-// export default withTM(modulesToTranspile)(nextConfig);
-
-// const withTM = require('next-transpile-modules')(['three']);
-
-// /**
-//  * @type {import('next').NextConfig}
-//  */
-// const nextConfig = {
-//   // Your Next.js configuration
-// };
-
-// module.exports = withTM(nextConfig);
