@@ -243,5 +243,5 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .scene-wrapper > div > div {
-    min-height: 80vh!important;
+    min-height: 100vh!important;
 }
