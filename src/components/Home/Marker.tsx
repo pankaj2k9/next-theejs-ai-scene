@@ -61,6 +61,7 @@ export default function SceneWithJoystick() {
 //         }
 //     };
 
+
 //     useFrame(() => {
 //         if (clicked) {
 //             camera.lookAt(markerRef.current.position);
